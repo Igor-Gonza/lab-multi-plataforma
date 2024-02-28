@@ -14,6 +14,14 @@ app.get("/cadastrar/:item", (req, res) => {
     res.send("<h1>Cadastrando item " + req.params.item + "</h1>")
 })
 
+app.get("/cadastrar/usuario", (req, res) => {
+    res.send("<h1>Cadastrando usuário</h1>")
+})
+
+app.get("/produtos/automovel/marca/modelo/ano", (req, res) => {
+    res.send("<h1>Página de Informações do Carro</h1>")
+})
+
 app.get("/contato", (req, res) => {
     res.send("<h1>Página de Contato</h1>")
 })
